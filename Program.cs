@@ -5,7 +5,7 @@ using System.Text;
 
 var builder = WebApplication.CreateBuilder(args);
 
-var frontUrl = builder.Configuration["FRONT_URL"];
+var frontUrl = builder.Configuration["FRONT_URL"] ?? "localhost:5173";
 
 var key = Environment.GetEnvironmentVariable("JWT_KEY");
 if (string.IsNullOrEmpty(key))
