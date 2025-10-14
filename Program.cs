@@ -5,14 +5,13 @@ using System.Text;
 
 var builder = WebApplication.CreateBuilder(args);
 
-var frontUrl = builder.Configuration["FRONT_URL"] ?? "localhost:5173";
+var frontUrl = builder.Configuration["FRONT_URL"];
 
 var key = Environment.GetEnvironmentVariable("JWT_KEY");
 if (string.IsNullOrEmpty(key))
 {
     var keyBytes = RandomNumberGenerator.GetBytes(32);
     key = Convert.ToBase64String(keyBytes);
-    Console.WriteLine($"JWT_KEY gerada automaticamente: {key}");
 }
 
 var issuer = builder.Configuration["Jwt:Issuer"] ?? "APITesteDev";
