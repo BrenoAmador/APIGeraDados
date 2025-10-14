@@ -12,6 +12,7 @@ if (string.IsNullOrEmpty(key))
 {
     var keyBytes = RandomNumberGenerator.GetBytes(32);
     key = Convert.ToBase64String(keyBytes);
+    Console.WriteLine("JWT_KEY: " + key);
 }
 
 var issuer = builder.Configuration["Jwt:Issuer"] ?? "APITesteDev";
