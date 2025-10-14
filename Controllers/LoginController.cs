@@ -30,9 +30,6 @@ namespace APITesteDev.Controllers
             var keyString = Environment.GetEnvironmentVariable("JWT_KEY");
             var key = new SymmetricSecurityKey(Encoding.UTF8.GetBytes(keyString!));
             var creds = new SigningCredentials(key, SecurityAlgorithms.HmacSha256);
-
-            var creds = new SigningCredentials(key, SecurityAlgorithms.HmacSha256);
-
             var claims = new[]
             {
                 new Claim(ClaimTypes.Name, usuario.Nome),
