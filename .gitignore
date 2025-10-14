@@ -1,0 +1,56 @@
+## Build Folders
+bin/
+obj/
+[Rr]elease/
+[Dd]ebug/
+artifacts/
+
+## Visual Studio
+.vs/
+*.user
+*.suo
+*.userosscache
+*.sln.docstates
+
+## Rider
+.idea/
+
+## ASP.NET / .NET Core
+appsettings.*.json
+project.lock.json
+project.fragment.lock.json
+*.dbmdl
+*.bak
+*.backup
+*.log
+
+## NuGet Packages
+*.nupkg
+*.snupkg
+packages/
+.nuget/
+
+## JetBrains
+*.dotCover
+*.dotSettings
+*.dotMemory
+*.dotTrace
+
+## Others
+*.vsix
+*.cache
+*.DS_Store
+*.vscode/
+*.tmp
+*.pid
+*.seed
+
+## Test Results
+[Tt]est[Rr]esult*/
+[Bb]uild[Ll]og.*
+coverage/
+
+## Code Analysis
+*.ruleset
+*.resharper
+*.DotSettings.user
