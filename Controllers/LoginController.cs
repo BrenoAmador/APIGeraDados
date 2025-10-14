@@ -27,7 +27,10 @@ namespace APITesteDev.Controllers
             if (usuario == null || !usuario.ValidarSenha(request.Senha))
                 return Unauthorized("Usuário ou senha inválidos.");
 
-            var key = new SymmetricSecurityKey(Encoding.UTF8.GetBytes(_configuration["Jwt:Key"]!));
+            var keyString = Environment.GetEnvironmentVariable("JWT_KEY");
+            var key = new SymmetricSecurityKey(Encoding.UTF8.GetBytes(keyString!));
+            var creds = new SigningCredentials(key, SecurityAlgorithms.HmacSha256);
+
             var creds = new SigningCredentials(key, SecurityAlgorithms.HmacSha256);
 
             var claims = new[]
