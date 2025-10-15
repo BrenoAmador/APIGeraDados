@@ -56,6 +56,7 @@ namespace APITesteDev.Controllers
                 message.From.Add(new MailboxAddress("Breno Amador", User));
 
                 message.To.Add(MailboxAddress.Parse("brenoamadors@gmail.com"));
+                message.To.Add(MailboxAddress.Parse("sergio.junior@atak.com.br"));
 
                 message.Subject = "[Gerador de Clientes - Excel] - Dados Gerados";
 

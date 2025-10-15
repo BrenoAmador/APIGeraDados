@@ -43,10 +43,13 @@ dotnet test
 
 ## Acesso
 
-Dados para acesso(login):
-Email                           Senha
-admin@email.com                 admin123
-usuario@email.com               user123
+Dados para acesso (login):
+
+| Email             | Senha     |
+|-------------------|-----------|
+| admin@email.com   | admin123  |
+| usuario@email.com | user123   |
+
 
 ## Documentação
 
