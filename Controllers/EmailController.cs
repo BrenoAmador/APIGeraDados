@@ -66,6 +66,7 @@ namespace APITesteDev.Controllers
                     +"\nAPI: https://github.com/BrenoAmador/APIGeraDados"
                     +"\nFront-end: https://github.com/BrenoAmador/APPTesteDev"
                     +"\n Link da aplicação: https://app-teste-dev.vercel.app/"
+                    +"\n\nAtenciosamente, Breno Amador."
                 };
 
                 builder.Attachments.Add(filePath);
