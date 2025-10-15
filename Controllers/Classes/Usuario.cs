@@ -6,7 +6,7 @@ namespace APITesteDev.Controllers.Classes
     {
         public string Nome { get; private set; }
         public string Email { get; private set; }
-        private string Senha { get; private set; }
+        private string Senha { get; set; }
 
         public Usuario(string nome, string email, string senha)
         {
