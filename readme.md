@@ -41,6 +41,13 @@ Para rodar os testes automatizados:
 dotnet test
 ```
 
+## Acesso
+
+Dados para acesso(login):
+Email                           Senha
+admin@email.com                 admin123
+usuario@email.com               user123
+
 ## Documentação
 
 Acesse a documentação Swagger em `http://localhost:5000/swagger` após iniciar a aplicação.

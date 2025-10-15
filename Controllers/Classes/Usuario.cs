@@ -6,7 +6,7 @@ namespace APITesteDev.Controllers.Classes
     {
         public string Nome { get; private set; }
         public string Email { get; private set; }
-        private string Senha { get; set; }
+        private string Senha { get; private set; }
 
         public Usuario(string nome, string email, string senha)
         {
@@ -23,7 +23,6 @@ namespace APITesteDev.Controllers.Classes
         public static List<Usuario> Usuarios = new()
         {
             new Usuario("Admin", "admin@email.com", "admin123"),
-            new Usuario("Breno", "breno@email.com", "breno123"),
             new Usuario("Usuario", "usuario@email.com", "user123")
         };
     }

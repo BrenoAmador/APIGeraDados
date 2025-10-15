@@ -61,7 +61,11 @@ namespace APITesteDev.Controllers
 
                 var builder = new BodyBuilder
                 {
-                    TextBody = "Segue o arquivo gerado do projeto."
+                    TextBody = "Projeto para geração de dados fictícios de clientes em Excel, utilizando ASP.NET Core Web API no back-end e React no front-end."
+                    +"\nLinks dos repositórios:"
+                    +"\nAPI: https://github.com/BrenoAmador/APIGeraDados"
+                    +"\nFront-end: https://github.com/BrenoAmador/APPTesteDev"
+                    +"\n Link da aplicação: https://app-teste-dev.vercel.app/"
                 };
 
                 builder.Attachments.Add(filePath);
