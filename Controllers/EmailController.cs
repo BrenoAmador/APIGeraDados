@@ -56,7 +56,6 @@ namespace APITesteDev.Controllers
                 message.From.Add(new MailboxAddress("Breno Amador", User));
 
                 message.To.Add(MailboxAddress.Parse("brenoamadors@gmail.com"));
-                message.To.Add(MailboxAddress.Parse("sergio.junior@atak.com.br"));
 
                 message.Subject = "[Gerador de Clientes - Excel] - Dados Gerados";
 
@@ -66,8 +65,7 @@ namespace APITesteDev.Controllers
                     +"\nLinks dos repositórios:"
                     +"\nAPI: https://github.com/BrenoAmador/APIGeraDados"
                     +"\nFront-end: https://github.com/BrenoAmador/APPTesteDev"
-                    +"\n Link da aplicação: https://app-teste-dev.vercel.app/"
-                    +"\n\nAtenciosamente, Breno Amador."
+                    +"\nLink da aplicação: https://app-teste-dev.vercel.app/"
                 };
 
                 builder.Attachments.Add(filePath);
